@@ -1,4 +1,3 @@
-// Довідник типів покемонів.
 enum PokemonType {
   normal,
   fire,
@@ -20,7 +19,6 @@ enum PokemonType {
   fairy,
   other;
 
-  // Повертає тип за назвою; невідомі назви стають other.
   static PokemonType fromName(String? name) {
     for (final type in values) {
       if (type.name == name) {
