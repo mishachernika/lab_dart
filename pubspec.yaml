@@ -1,0 +1,14 @@
+name: lab_dart
+description: Консольний застосунок на Dart - колекція покемонів (PokeAPI, JSON, тести).
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  http: ^1.2.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0
