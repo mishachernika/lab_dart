@@ -3,7 +3,6 @@ import '../models/pokemon_type.dart';
 
 enum SortField { id, name, height, weight, baseExperience }
 
-// Пошук за частиною імені (без урахування регістру).
 List<Pokemon> searchByName(List<Pokemon> list, String query) {
   final key = query.trim().toLowerCase();
   return list.where((item) => item.name.toLowerCase().contains(key)).toList();
