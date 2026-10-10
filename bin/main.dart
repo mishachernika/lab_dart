@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:lab_dart/lab_dart.dart';
 
 const String _menu = '''
-===== Колекція покемонів =====
 1. Показати список
 2. Додати покемона вручну
 3. Завантажити покемона з API
@@ -52,8 +51,6 @@ Future<void> main() async {
   _out('До побачення!');
 }
 
-// ---------- допоміжні функції введення/виведення ----------
-
 void _out([String text = '']) => stdout.writeln(text);
 
 String? _ask(String prompt) {
@@ -61,7 +58,6 @@ String? _ask(String prompt) {
   return stdin.readLineSync()?.trim();
 }
 
-// Повертає null, якщо введення некоректне (і повідомляє про це).
 int? _askInt(String prompt, {int? min, int? max}) {
   final text = _ask(prompt);
   if (text == null) {
@@ -126,8 +122,6 @@ PokemonType? _chooseType() {
   final number = _askInt('Тип (номер): ', min: 1, max: types.length);
   return number == null ? null : types[number - 1];
 }
-
-// ---------- пункти меню ----------
 
 Future<void> _addManually(AppData data, DataRepository repository) async {
   final id = _askInt('ID (додатне число): ', min: 1);
