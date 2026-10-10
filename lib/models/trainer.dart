@@ -1,6 +1,5 @@
 import 'storable.dart';
 
-// Тренер зберігає id покемонів, яких упіймав (звʼязок з моделлю Pokemon).
 class Trainer implements Storable {
   Trainer({required this.name, List<int>? pokemonIds})
       : pokemonIds = pokemonIds ?? <int>[];
@@ -17,7 +16,6 @@ class Trainer implements Storable {
   final String name;
   final List<int> pokemonIds;
 
-  // Повертає false, якщо покемон уже є в тренера.
   bool catchPokemon(int id) {
     if (pokemonIds.contains(id)) {
       return false;
