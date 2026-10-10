@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="626" viewBox="0 0 840 626">
+  <rect width="100%" height="100%" rx="13" fill="#0b1020"/>
+  <path d="M13 0h814a13 13 0 0 1 13 13v39H0V13A13 13 0 0 1 13 0Z" fill="#20283a"/>
+  <circle cx="20" cy="26" r="6" fill="#ff625a"/>
+  <circle cx="42" cy="26" r="6" fill="#ffc04d"/>
+  <circle cx="64" cy="26" r="6" fill="#36c979"/>
+  <text x="88" y="31" class="title">Застосунок · читання збереженої колекції</text>
+  <g font-family="Menlo, Monaco, 'Courier New', monospace" font-size="14" fill="#e2e8f0">
+  <text x="26" y="76" class="line">Дані зчитано з data.json: покемонів — 1, тренерів — 0.</text>
+  <text x="26" y="98" class="line"></text>
+  <text x="26" y="120" class="line">1. Показати список</text>
+  <text x="26" y="142" class="line">2. Додати покемона вручну</text>
+  <text x="26" y="164" class="line">3. Завантажити покемона з API</text>
+  <text x="26" y="186" class="line">4. Видалити покемона</text>
+  <text x="26" y="208" class="line">5. Пошук за назвою</text>
+  <text x="26" y="230" class="line">6. Фільтр за типом</text>
+  <text x="26" y="252" class="line">7. Сортування</text>
+  <text x="26" y="274" class="line">8. Тренери</text>
+  <text x="26" y="296" class="line">0. Вихід</text>
+  <text x="26" y="318" class="line">Оберіть пункт:</text>
+  <text x="26" y="340" class="line">Усі покемони (1):</text>
+  <text x="26" y="362" class="line">  #25 pikachu [electric] зріст: 4, вага: 60, досвід: 112</text>
+  <text x="26" y="384" class="line"></text>
+  <text x="26" y="406" class="line">1. Показати список</text>
+  <text x="26" y="428" class="line">2. Додати покемона вручну</text>
+  <text x="26" y="450" class="line">3. Завантажити покемона з API</text>
+  <text x="26" y="472" class="line">4. Видалити покемона</text>
+  <text x="26" y="494" class="line">5. Пошук за назвою</text>
+  <text x="26" y="516" class="line">6. Фільтр за типом</text>
+  <text x="26" y="538" class="line">7. Сортування</text>
+  <text x="26" y="560" class="line">8. Тренери</text>
+  <text x="26" y="582" class="line">0. Вихід</text>
+  <text x="26" y="604" class="line">Оберіть пункт: До побачення!</text>
+  </g>
+  <style>.title {font: 13px -apple-system, BlinkMacSystemFont, sans-serif; fill: #cbd5e1;}</style>
+</svg>

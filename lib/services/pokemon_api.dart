@@ -60,7 +60,8 @@ class PokemonApi {
     } on PokemonApiException {
       rethrow;
     } on SocketException {
-      throw PokemonApiException('Немає звʼязку з сервером (перевірте інтернет).');
+      throw PokemonApiException(
+          'Немає звʼязку з сервером (перевірте інтернет).');
     } on http.ClientException catch (e) {
       throw PokemonApiException('Помилка зʼєднання: ${e.message}');
     } on TimeoutException {

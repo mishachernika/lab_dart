@@ -30,7 +30,9 @@ void main() {
             type: PokemonType.electric,
           ),
         ],
-        trainers: [Trainer(name: 'Ash', pokemonIds: [25])],
+        trainers: [
+          Trainer(name: 'Ash', pokemonIds: [25])
+        ],
       );
 
       await repository.save(data);
@@ -55,7 +57,8 @@ void main() {
     });
 
     test('файл з неправильною структурою дає StorageException', () async {
-      File(path).writeAsStringSync('{"pokemon": [{"id": "abc"}], "trainers": []}');
+      File(path)
+          .writeAsStringSync('{"pokemon": [{"id": "abc"}], "trainers": []}');
       expect(
         () => DataRepository(path).load(),
         throwsA(isA<StorageException>()),

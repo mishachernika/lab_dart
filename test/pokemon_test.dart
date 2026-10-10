@@ -45,7 +45,10 @@ void main() {
         'types': [
           {
             'slot': 1,
-            'type': {'name': 'electric', 'url': 'https://pokeapi.co/api/v2/type/13/'},
+            'type': {
+              'name': 'electric',
+              'url': 'https://pokeapi.co/api/v2/type/13/'
+            },
           },
         ],
       });
@@ -67,7 +70,9 @@ void main() {
     test('toJson і fromJson зберігають покемонів і тренерів', () {
       final data = AppData(
         pokemon: [pikachu],
-        trainers: [Trainer(name: 'Ash', pokemonIds: [25])],
+        trainers: [
+          Trainer(name: 'Ash', pokemonIds: [25])
+        ],
       );
       final restored = AppData.fromJson(data.toJson());
       expect(restored.pokemon, [pikachu]);
@@ -85,7 +90,9 @@ void main() {
     test('removePokemon прибирає покемона й його id у тренерів', () {
       final data = AppData(
         pokemon: [pikachu],
-        trainers: [Trainer(name: 'Ash', pokemonIds: [25])],
+        trainers: [
+          Trainer(name: 'Ash', pokemonIds: [25])
+        ],
       );
       expect(data.removePokemon(25), isTrue);
       expect(data.pokemon, isEmpty);
